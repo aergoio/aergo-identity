@@ -115,13 +115,6 @@ If a change has ever been made for an identity the block number is stored in the
 
 The latest event can be efficiently looked up by checking for one of the 3 above events at that exact block.
 
-To see all changes in history for an identity use the following pseudo code:
-
-1.  Call `changed(address identity)` on the ERC1056 contract.
-2.  If result is `null` return.
-3.  Filter for events for all the above types with the contracts address on the specified block.
-4.  If event has a previous change then go to 3
-
 #### Delegate Keys
 
 Delegate keys are AERGO addresses that can either be general signing keys or optionally also perform
