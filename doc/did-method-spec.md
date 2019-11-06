@@ -139,40 +139,43 @@ The name of the attribute added to did registry should follow this format:
 A `DIDAttributeChanged` event for the identity `AmgFiAupQBr7tx4CLkoV7uZhsMYDNjM5tsQUREKfdtwpGqsm3R9s` with the name
 `did/pub/Secp256k1/veriKey/hex` and the value of `416d67466941757051427237747834434c6b6f5637755a68734d59444e6a4d357473515552454b66647477704771736d33523973`
 generates a public key entry like the following:
-
+```
   {
     id: "did:aergo:AmgFiAupQBr7tx4CLkoV7uZhsMYDNjM5tsQUREKfdtwpGqsm3R9s#delegate-1",
     type: "Secp256k1VerificationKey2018",
     owner: "did:aergo:AmgFiAupQBr7tx4CLkoV7uZhsMYDNjM5tsQUREKfdtwpGqsm3R9s",
     publicKeyHex: '416d67466941757051427237747834434c6b6f5637755a68734d59444e6a4d357473515552454b66647477704771736d33523973'
   }
+```
 
 ##### Base64 encoded Secp256k1 Verification Key
 
 A `DIDAttributeChanged` event for the identity `AmgFiAupQBr7tx4CLkoV7uZhsMYDNjM5tsQUREKfdtwpGqsm3R9s` with the name 
 `did/pub/Secp256k1/veriKey/base64` and the value of `QW1nRmlBdXBRQnI3dHg0Q0xrb1Y3dVpoc01ZRE5qTTV0c1FVUkVLZmR0d3BHcXNtM1I5cw==`
 generates a public key entry like this:
-
+```
   {
     id: "did:aergo:AmgFiAupQBr7tx4CLkoV7uZhsMYDNjM5tsQUREKfdtwpGqsm3R9s#delegate-1",
     type: "Secp256k1VerificationKey2018",
     owner: "did:aergo:AmgFiAupQBr7tx4CLkoV7uZhsMYDNjM5tsQUREKfdtwpGqsm3R9s",
     publicKeyBase64: "QW1nRmlBdXBRQnI3dHg0Q0xrb1Y3dVpoc01ZRE5qTTV0c1FVUkVLZmR0d3BHcXNtM1I5cw=="
   }
+```
 
 ##### Base58 encoded Secp256k1 Verification Key
 
 A `DIDAttributeChanged` event for the identity `AmgFiAupQBr7tx4CLkoV7uZhsMYDNjM5tsQUREKfdtwpGqsm3R9s` with the name 
 `did/pub/Secp256k1/veriKey/base64` and the value of `0xb97c30de767f084ce3080168ee293053ba33b235d7116a3263d29f1450936b71`
 generates a public key entry like this:
-
+```
   {
     id: "did:aergo:AmgFiAupQBr7tx4CLkoV7uZhsMYDNjM5tsQUREKfdtwpGqsm3R9s#delegate-1",
     type: "Secp256k1VerificationKey2018",
     owner: "did:aergo:AmgFiAupQBr7tx4CLkoV7uZhsMYDNjM5tsQUREKfdtwpGqsm3R9s",
     publicKeyBase58: "AmgFiAupQBr7tx4CLkoV7uZhsMYDNjM5tsQUREKfdtwpGqsm3R9s"
   }
-  
+```
+
 #### Service Endpoints
 
 The name of the attribute should follow this format:
@@ -181,11 +184,12 @@ The name of the attribute should follow this format:
 
 A `DIDAttributeChanged` event for the identity `AmgFiAupQBr7tx4CLkoV7uZhsMYDNjM5tsQUREKfdtwpGqsm3R9s` with the name 
 `did/svc/PowService` and value of the URL `https://pow.aergo.io` generates a service endpoint entry like the following:
-
+```
   {
     type: "PowService",
     serviceEndpoint: "https://pow.aergo.io"
   }
+```
 
 ### Update / Delete (Revoke)
 
