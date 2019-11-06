@@ -27,8 +27,8 @@ replace themselves with any other AERGO address.
 
 ## JSON-LD Context Definition
 Note, this DID method specification uses following types:
- ##### `Secp256k1VerificationKey2018`  ( same as used for ethereum )
- ##### `Secp256k1SignatureAuthentication2018` ( same as used for ethereum )
+ ##### `Secp256k1VerificationKey2018`  ( same as used for Ethereum )
+ ##### `Secp256k1SignatureAuthentication2018` ( same as used for Ethereum )
  And following options for key values:
  ##### `aergoAddress`
  ##### `publicKeyHex`
@@ -71,7 +71,7 @@ The holder of the private key is the entity identified by the DID.
 
 The minimal DID document for a an AERGO address, e.g., `AmgFiAupQBr7tx4CLkoV7uZhsMYDNjM5tsQUREKfdtwpGqsm3R9s` with no
 transactions to the did registry looks like this:
-
+```
   {
     '@context': 'https://w3id.org/did/v1',
     id: 'did:aergo:AmgFiAupQBr7tx4CLkoV7uZhsMYDNjM5tsQUREKfdtwpGqsm3R9s',
@@ -84,6 +84,7 @@ transactions to the did registry looks like this:
        type: 'Secp256k1SignatureAuthentication2018',
        publicKey: 'did:aergo:AmgFiAupQBr7tx4CLkoV7uZhsMYDNjM5tsQUREKfdtwpGqsm3R9s#owner'}]
   }
+```
 
 ### Read (Resolve)
 
@@ -122,30 +123,14 @@ To see all changes in history for an identity use the following pseudo code:
 
 #### Delegate Keys
 
-Delegate keys are Ethereum addresses that can either be general signing keys or optionally also perform
+Delegate keys are AERGO addresses that can either be general signing keys or optionally also perform
 authentication.
-
-They are also verifiable from Solidity.
-
-A `DIDDelegateChanged` event is published that is used to build a DID document.
-
-  event DIDDelegateChanged(
-    address indexed identity,
-    bytes32 delegateType,
-    address delegate,
-    uint validTo,
-    uint previousChange
-    );
-    
 
 The only 2 `delegateTypes` that are currently published in the DID document are:
 
 -   `veriKey` which adds a `Secp256k1VerificationKey2018` to the `publicKey` section of the DID document.
 -   `sigAuth` which adds a `Secp256k1SignatureAuthentication2018` to the `publicKey` section of document. An entry
   is also added to the `authentication` section of the DID document.
-
-Note, the `delegateType` is a `bytes32` type for Ethereum gas efficiency reasons and not a `string`. This 
-restricts us to 32 bytes, which is why we use the short hand versions above.
 
 Only events with a `validTo` in seconds greater or equal to the current time should be included in the DID document.
 
