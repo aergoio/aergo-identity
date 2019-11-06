@@ -25,15 +25,16 @@ By default, each identity is controlled by itself. Each identity can only be con
 address at any given time. By default, this is the address of the identity itself. The owner can 
 replace themselves with any other AERGO address.
 
-## JSON-LD Context Definition
+## Context Definition
 Note, this DID method specification uses following types:
- ##### `Secp256k1VerificationKey2018`  ( same as used for Ethereum )
- ##### `Secp256k1SignatureAuthentication2018` ( same as used for Ethereum )
- And following options for key values:
- ##### `aergoAddress`
- ##### `publicKeyHex`
- ##### `publicKeyBase64`
- ##### `publicKeyBase58`
+ * `Secp256k1VerificationKey2018`  ( same as used for Ethereum )
+ * `Secp256k1SignatureAuthentication2018` ( same as used for Ethereum )
+  
+And following options for key values:
+ * `aergoAddress`
+ * `publicKeyHex`
+ * `publicKeyBase64`
+ * `publicKeyBase58`
 
 
 ## DID Method Name
