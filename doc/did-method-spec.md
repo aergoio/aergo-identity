@@ -15,8 +15,8 @@ The described DID method allows any AERGO smart contract or key pair account to 
 An identity needs no registration. In the case that key management or additional
 attributes such as "service endpoints" are required, we deployed did registry smart contracts on:
 
--   Mainnet: ``
--   Testnet: `AmgFiAupQBr7tx4CLkoV7uZhsMYDNjM5tsQUREKfdtwpGqsm3R9s`
+-   Mainnet: `AmgUfj2ghDBRJsmpuSvBZq1Zp67kMc8QX72r1Eh7aS24ueADStPv`
+-   Testnet: `AmhPkt8JXujkN6TWEJbynaXqnQUh1AfUckJEyDvTYoA3PyXXf7as`
 
 Since each AERGO transaction must be funded, in order to update attributes, account balance must be greater than zero.
 
