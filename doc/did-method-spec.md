@@ -214,11 +214,6 @@ The DID Document may be updated by invoking changeOwner, setAttribute, revokeAtt
 
 These functions will trigger the respective AERGO events which are used to build the DID Document.
 
-## Reference Implementations
-
-The code at [https://github.com/uport-project/ethr-did-resolver](<>) is intended to present a reference implementation
-of this DID method. 
-
 ## References
 
  **[1]** AERGO: <https://www.aergo.io>
