@@ -1,3 +1,16 @@
-{
-
-}
+[
+  {
+    "name": "mainnet",
+    "registry": "AmgUfj2ghDBRJsmpuSvBZq1Zp67kMc8QX72r1Eh7aS24ueADStPv",
+    "hostname": "mainnet-api.aergo.io",
+    "port": 7845,
+    "explorerUrl": "https://api.aergoscan.io/mainnet"
+  },
+  {
+    "name": "testnet",
+    "registry": "AmhPkt8JXujkN6TWEJbynaXqnQUh1AfUckJEyDvTYoA3PyXXf7as",
+    "hostname": "testnet-api.aergo.io",
+    "port": 7845,
+    "explorerUrl": "https://api.aergoscan.io/testnet"
+  }
+]
