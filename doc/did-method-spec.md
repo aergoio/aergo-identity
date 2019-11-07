@@ -1,29 +1,29 @@
-# AERGO DID Method Specification
+# Aergo DID Method Specification
 
 ## Author
 
--   AERGO: <https://www.aergo.io/about#contact>
+-   Aergo: <https://www.aergo.io/about#contact>
 
 ## Preface
 
-The AERGO DID method specification conforms to the requirements specified in 
+The Aergo DID method specification conforms to the requirements specified in 
 the [DID specification](https://w3c-ccg.github.io/did-spec/).
 
 ## Abstract
 
-The described DID method allows any AERGO smart contract or key pair account to become a valid identity.
+The described DID method allows any Aergo smart contract or key pair account to become a valid identity.
 An identity needs no registration. In the case that key management or additional
 attributes such as "service endpoints" are required, we deployed did registry smart contracts on:
 
 -   Mainnet: `AmgUfj2ghDBRJsmpuSvBZq1Zp67kMc8QX72r1Eh7aS24ueADStPv`
 -   Testnet: `AmhPkt8JXujkN6TWEJbynaXqnQUh1AfUckJEyDvTYoA3PyXXf7as`
 
-Since each AERGO transaction must be funded, in order to update attributes, account balance must be greater than zero.
+Since each Aergo transaction must be funded, in order to update attributes, account balance must be greater than zero.
 
 ### Identity Ownership 
 By default, each identity is controlled by itself. Each identity can only be controlled by a single 
 address at any given time. By default, this is the address of the identity itself. The owner can 
-replace themselves with any other AERGO address.
+replace themselves with any other Aergo address.
 
 ## Context Definition
 Note, this DID method specification uses following types:
@@ -53,10 +53,10 @@ The method specific identifier is same as the following:
     aergo-network-id = "mainnet" / "testnet" 
     ethr-address = 52*Base58Check 
 
-The AERGO address is case-sensitive.
+The Aergo address is case-sensitive.
 
-Note, if no public AERGO network was specified, it is assumed that the DID is anchored
-on the AERGO mainnet per default. This means the following DIDs will resolve to the same
+Note, if no public Aergo network was specified, it is assumed that the DID is anchored
+on the Aergo mainnet per default. This means the following DIDs will resolve to the same
 DID Document:
 
     did:aergo:mainnet:AmgFiAupQBr7tx4CLkoV7uZhsMYDNjM5tsQUREKfdtwpGqsm3R9s
@@ -66,11 +66,11 @@ DID Document:
 
 ### Create (Register)
 
-In order to create a DID, an AERGO address, i.e., key pair, needs to be generated. At this point,
-no interaction with the target AERGO network is required. 
+In order to create a DID, an Aergo address, i.e., key pair, needs to be generated. At this point,
+no interaction with the target Aergo network is required. 
 The holder of the private key is the entity identified by the DID.
 
-The minimal DID document for a an AERGO address, e.g., `AmgFiAupQBr7tx4CLkoV7uZhsMYDNjM5tsQUREKfdtwpGqsm3R9s` with no
+The minimal DID document for a an Aergo address, e.g., `AmgFiAupQBr7tx4CLkoV7uZhsMYDNjM5tsQUREKfdtwpGqsm3R9s` with no
 transactions to the did registry looks like this:
 ```
   {
@@ -91,7 +91,7 @@ transactions to the did registry looks like this:
 
 The DID document is built by using read only functions and contract events on the did registry.
 
-Any value from the registry that returns an AERGO address will be added to the `publicKey` array of the DID 
+Any value from the registry that returns an Aergo address will be added to the `publicKey` array of the DID 
 document with type `Secp256k1VerificationKey2018` and an `aergoAddress` attribute containing the address.
 
 #### Owner Address
@@ -117,7 +117,7 @@ The latest event can be efficiently looked up by checking for one of the 3 above
 
 #### Delegate Keys
 
-Delegate keys are AERGO addresses that can either be general signing keys or optionally also perform
+Delegate keys are Aergo addresses that can either be general signing keys or optionally also perform
 authentication.
 
 The only 2 `delegateTypes` that are currently published in the DID document are:
@@ -195,13 +195,13 @@ A `DIDAttributeChanged` event for the identity `AmgFiAupQBr7tx4CLkoV7uZhsMYDNjM5
 
 The DID Document may be updated by invoking changeOwner, setAttribute, revokeAttribute, addDelegate, revokeDelegate on did registry smart contract functions.
 
-These functions will trigger the respective AERGO events which are used to build the DID Document.
+These functions will trigger the respective Aergo events which are used to build the DID Document.
 
 ## References
 
- **[1]** AERGO: <https://www.aergo.io>
+ **[1]** Aergo: <https://www.aergo.io>
  
- **[2]** AERGO Project Github: <https://github.com/aergoio>
+ **[2]** Aergo Project Github: <https://github.com/aergoio>
  
  **[3]** W3C Decentralized Identifiers (DIDs): <https://w3c-ccg.github.io/did-spec/>
 
