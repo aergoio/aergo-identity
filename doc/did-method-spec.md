@@ -197,6 +197,22 @@ The DID Document may be updated by invoking changeOwner, setAttribute, revokeAtt
 
 These functions will trigger the respective Aergo events which are used to build the DID Document.
 
+
+## Security Considerations
+
+Aergo Identity is based on Aergo blockchain.
+Aergo blockchain provides security against following risks:
+* Replay Attacks
+* DoS Attacks
+* Man-in-the-middle Attacks
+* Non-repudiation
+* Byzantine fault 
+
+## Privacy Considerations
+Aergo Identity does not store any personal data.
+DID document is stored in Aergo Identity which contains did, public keys, and service endpoints.
+
+
 ## References
 
  **[1]** Aergo: <https://www.aergo.io>
