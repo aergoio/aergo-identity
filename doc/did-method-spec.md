@@ -216,7 +216,7 @@ Sodium sealed boxes are used for sending messages from/to mobile devices.
 
 Aergo Identity strictly follows Privacy by Design guidelines provided by W3C.  
 Aergo Identity does not store any personal information.  
-DID document is stored in Aergo Identity which contains did, public keys, and service endpoints.
+DID document contains only did, public keys, and service endpoints.  
 All personal information is stored in users mobile devices and user decides which information to disclose.  
 
 ## References
