@@ -206,12 +206,18 @@ Aergo blockchain provides security against following risks:
 * DoS Attacks
 * Man-in-the-middle Attacks
 * Non-repudiation
-* Byzantine fault 
+* Byzantine fault
+ 
+Aergo Identity utilizes Sodium for encryption used in communication between mobile devices and servers.  
+Sodium sealed boxes are used for sending messages from/to mobile devices.
+ 
 
 ## Privacy Considerations
-Aergo Identity does not store any personal data.
-DID document is stored in Aergo Identity which contains did, public keys, and service endpoints.
 
+Aergo Identity strictly follows Privacy by Design guidelines provided by W3C.  
+Aergo Identity does not store any personal information.  
+DID document is stored in Aergo Identity which contains did, public keys, and service endpoints.
+All personal information is stored in users mobile devices and user decides which information to disclose.  
 
 ## References
 
