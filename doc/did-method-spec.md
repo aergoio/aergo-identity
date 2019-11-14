@@ -51,7 +51,7 @@ The method specific identifier is same as the following:
     aergo-did = "did:aergo:" specific-idstring
     specific-idstring = [ aergo-network-id ":" ] aergo-address
     aergo-network-id = "mainnet" / "testnet" 
-    ethr-address = 52*Base58Check 
+    aergo-address = 52*Base58Check 
 
 The Aergo address is case-sensitive.
 
