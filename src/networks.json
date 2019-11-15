@@ -4,13 +4,17 @@
     "registry": "AmgUfj2ghDBRJsmpuSvBZq1Zp67kMc8QX72r1Eh7aS24ueADStPv",
     "hostname": "mainnet-api.aergo.io",
     "port": 7845,
-    "explorerUrl": "https://api.aergoscan.io/mainnet"
+    "explorerUrl": "https://api.aergoscan.io/mainnet",
+    "gemToken": "AmgVVAdw6C9ehYq2oGWn7sTkBmg9CJuv329dVRf3gxPYoPuL8JJJ",
+    "getExchangeRate": "AmgVbUZiReUVFXdYb4UVMru4ZqyicSsFPqumRx8LfwMKLFk66SNw"
   },
   {
     "name": "testnet",
     "registry": "AmhPkt8JXujkN6TWEJbynaXqnQUh1AfUckJEyDvTYoA3PyXXf7as",
     "hostname": "testnet-api.aergo.io",
     "port": 7845,
-    "explorerUrl": "https://api.aergoscan.io/testnet"
+    "explorerUrl": "https://api.aergoscan.io/testnet",
+    "gemToken": "AmhCiADweJzmQGpcWP9njCYdxNf2jEDdD9ZgPP99TmE18iTDSzXN",
+    "getExchangeRate": "Amhs83JTij6ic3g5AdhFUQ7kwZVKX3GrQUo199emcrKqsSFSdzt8"
   }
 ]
