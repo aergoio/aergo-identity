@@ -10,7 +10,7 @@
   },
   {
     "name": "testnet",
-    "didRegistry": "AmhPkt8JXujkN6TWEJbynaXqnQUh1AfUckJEyDvTYoA3PyXXf7as",
+    "didRegistry": "AmggjJsKA8P4sXUKcFrsJ3eJTFrMDQX3V9ShVVraSpBopwqvyBZq",
     "hostname": "testnet-api.aergo.io",
     "port": 7845,
     "explorerUrl": "https://api.aergoscan.io/testnet",
